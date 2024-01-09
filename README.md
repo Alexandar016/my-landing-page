@@ -14,8 +14,8 @@ Welcome to the "my-landing-page" repository. This project focuses on creating a 
   |     └── script.js
   |
   ├── 📁 images
-  |     ├── flower1.jpg
-  |     ├── flower2.jpg
+  |     ├── logo.png
+  |     ├── pic-1.png
   |     └── ...
   ├── script.js
   |  
