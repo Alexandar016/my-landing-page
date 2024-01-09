@@ -552,9 +552,3 @@ section{
    }
 
 }
-
-@media screen and (min-width: 1025px) {
-   .teachers .swiper-pagination {
-     display: none;
-   }
- }
