@@ -18,7 +18,7 @@
 
    <link rel="icon" type="image/x-icon" href="images/logo.png">
    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
-   <!-- <meta name="google-site-verification" content="mKs0G3RckJ8ceESqKIRxhrQ-FmcuDRbwc5Sqk95vAu0" /> -->
+   <!-- <meta name="google-site-verification" content="" /> -->
    <meta property="og:title" content="Domaci Zadatak">
    <meta property="og:description" content="Internet stranica Domaci Zadatak za onlajn casove matematike.">
    <meta property="og:image" content="images/logo.png">
@@ -372,7 +372,8 @@
          <img src="images/contact-img.svg" alt="">
       </div>
 
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" netlify>
+         <input type="hidden" name="form-name" value="contact" />
          <span>Ime i Prezime</span>
          <input type="text" required placeholder="Unesite vaše puno ime" maxlength="50" name="name" class="box">
          <span>E-mail</span>
@@ -380,7 +381,7 @@
          <span>Poruka</span>
          <textarea name="message" required placeholder="Unesite sadržaj vaše poruke"></textarea>
          <span>izaberite nivo uzrasta</span>
-         <select name="couses" class="box" required>
+         <select name="courses" class="box" required>
             <option value="" disabled selected>-- izaberite nivo uzrasta --</option>
             <option value="osnovna škola">Osnovna Škola</option>
             <option value="srednja škola">Srednja Škola</option>
