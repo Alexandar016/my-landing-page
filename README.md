@@ -39,3 +39,5 @@ Welcome to the "my-landing-page" repository. This project focuses on creating a 
 Feel free to customize and expand upon this foundation to create a unique and captivating flower shop webpage.
 
 Happy coding! 🌸🌼🌺
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/be6258d1-0015-48be-8030-9f131710c66f/deploy-status)](https://app.netlify.com/sites/domaci-zadatak/deploys)
