@@ -438,6 +438,30 @@ section{
    color:var(--green);
 }
 
+.dropdown {
+   display: inline-block;
+}
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+.dropdown-content a:hover {
+   background-color: #f1f1f1;
+}
+
 .footer{
    background-color: var(--light-bg);
    text-align: center;
@@ -487,8 +511,21 @@ section{
    .teachers .swiper-pagination {
      display: block;
    }
- }
-
+   .header .flex .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--light-bg);
+   }
+   .header .flex .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+   .header .flex .navbar a {
+      display: block;
+      margin: 1rem 2rem;
+   }
+}
 
 /* media queries  */
 
@@ -527,11 +564,14 @@ section{
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
    }
    
-   .header .flex .navbar a{
+   /* .header .flex .navbar a{
       display: block;
       margin:2rem;
+   } */
+   .header .flex .navbar a {
+      display: block;
+      margin: 1rem 2rem;
    }
-
    .home .row .content h3{
       font-size: 6rem;
    }

@@ -1,0 +1,61 @@
+/* online courses section styles */
+.online-courses {
+    padding: 80px 0;
+ }
+ 
+ .online-courses .heading {
+    text-align: center;
+    margin-bottom: 50px;
+ }
+ 
+ .online-courses .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ 
+ .online-courses .course {
+    width: 45%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+ }
+ 
+ .online-courses .course img {
+    width: 100%;
+    height: auto;
+ }
+ 
+ .online-courses .course p {
+    padding: 20px;
+    font-size: 16px;
+    text-align:left;
+    background-color: white;
+ }
+ 
+ .online-courses .course a.btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+ }
+ 
+ .online-courses .course a.btn:hover {
+    background-color: #297fb8;
+ }
+ 
+ /* For single-course block in the last row */
+ .online-courses .single-course {
+    width: 100%;
+ }
+ 
+ /* Media query for responsiveness */
+ @media (max-width: 768px) {
+    .online-courses .course {
+       width: 100%;
+    }
+ }
+ 

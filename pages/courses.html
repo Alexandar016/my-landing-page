@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Internet stranica Domaci Zadatak za onlajn casove matematike.">
+   <title>Domaći Zadatak</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/courses.css">
+
+   <link rel="icon" type="image/x-icon" href="../images/logo.png">
+   <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png">
+   <!-- <meta name="google-site-verification" content="" /> -->
+   <meta property="og:title" content="Domaci Zadatak">
+   <meta property="og:description" content="Internet stranica Domaci Zadatak za onlajn casove matematike.">
+   <meta property="og:image" content="../images/logo.png">
+   <meta property="og:type" content="website">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">Domaći Zadatak</a>
+
+      <nav class="navbar">
+         <a href="#home">početna</a>
+         <a href="#about">Opis</a>
+         <a href="#courses">Časovi</a>
+         <a href="#teachers">Profesor</a>
+         <a href="#reviews">Ocene</a>
+         <a href="#contact">Kontakt</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<section class="online-courses" id="online-courses">
+   <h1 class="heading"><span>Naši Onlajn Kursevi</span></h1>
+
+   <div class="row">
+      <!-- Course 1 -->
+      <div class="course">
+         <img src="../images/PrvaGodina.png" alt="Course 1">
+         <p class="course-description">Sve što Vam je potrebno iz prve godine gimnazije ili stručnih škola na jednom mestu. Lekcije rađene onlajn i nalaze se na našem Jutjub kanalu.</p>
+         <a href="https://youtube.com/playlist?list=PLP39ZOVXyouJyQIVN-EdqLgXu0PaPwL_B&si=lXIty72-3dBEIC0N" target="_blank" class="btn">Započni kurs</a>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="course">
+         <img src="../images/DrugaGodina.png" alt="Course 2">
+         <p class="course-description">Sve što Vam je potrebno iz prve godine gimnazije ili stručnih škola na jednom mestu. Lekcije rađene onlajn i nalaze se na našem Jutjub kanalu.</p>
+         <a href="https://youtube.com/playlist?list=PLP39ZOVXyouK8ZQ3YSHftPlHQYUqAttDR&si=W5nIcopTYmlKX8l4" target="_blank" class="btn">Započni kurs</a>
+      </div>
+   </div>
+
+   <div class="row">
+      <!-- Course 3 -->
+      <div class="course">
+         <img src="../images/TrecaGodina.png" alt="Course 3">
+         <p class="course-description">Sve što Vam je potrebno iz prve godine gimnazije ili stručnih škola na jednom mestu. Lekcije rađene onlajn i nalaze se na našem Jutjub kanalu.</p>
+         <a href="https://youtube.com/playlist?list=PLP39ZOVXyouIpu7dy3bB-Dgr1xBo3X4Ch&si=XU3O7lwIwQNan2NB" target="_blank" class="btn">Započni kurs</a>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="course">
+         <img src="../images/CetvrtaGodina.png" alt="Course 4">
+         <p class="course-description">Sve što Vam je potrebno iz prve godine gimnazije ili stručnih škola na jednom mestu. Lekcije rađene onlajn i nalaze se na našem Jutjub kanalu.</p>
+         <a href="https://youtube.com/playlist?list=PLP39ZOVXyouKQEt5cRLDXtVcv9sDJEaSj&si=rXpt48l1MWFbXYCK" target="_blank" class="btn">Započni kurs</a>
+      </div>
+   </div>
+</section>
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <h1 class="heading"><span>kontaktirajte</span> nas</h1>
+
+   <div class="row">
+
+      <div class="image">
+         <img src="../images/contact-img.svg" alt="">
+      </div>
+
+      <form name="contact" netlify>
+         <input type="hidden" name="form-name" value="contact" />
+         <span>Ime i Prezime</span>
+         <input type="text" required placeholder="Unesite vaše puno ime" maxlength="50" name="name" class="box">
+         <span>E-mail</span>
+         <input type="email" required placeholder="Unesite validan e-mail" maxlength="50" name="email" class="box">
+         <span>Poruka</span>
+         <textarea name="message" required placeholder="Unesite sadržaj vaše poruke"></textarea>
+         <span>izaberite nivo uzrasta</span>
+         <select name="courses" class="box" required>
+            <option value="" disabled selected>-- izaberite nivo uzrasta --</option>
+            <option value="osnovna škola">Osnovna Škola</option>
+            <option value="srednja škola">Srednja Škola</option>
+            <option value="fakultet">Fakultet</option>
+         </select>
+         <span>Izaberite Pol</span>
+         <div class="radio">
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Muški</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Ženski</label>
+         </div>
+         <input type="submit" value="Pošalji Poruku" class="btn" name="send">
+      </form>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section>
+
+      <div class="share">
+         <a href="https://www.facebook.com/domaci.zadatak016" target="_blank" class="fab fa-facebook-f"></a>
+         <a href="https://www.instagram.com/domaci.zadatak016/" target="_blank" class="fab fa-instagram"></a>
+         <a href="https://www.youtube.com/channel/UCjykM4fRlxevw76npUvLxVQ" target="_blank" class="fab fa-youtube"></a>
+         <a href="https://github.com/Alexandar016" target="_blank" class="fab fa-github"></a>
+         <a href="https://www.linkedin.com/in/aleksandar-mitic-49523319a/" target="_blank" class="fab fa-linkedin"></a>
+      </div>
+
+      <div class="credit">&copy; copyright @ 2024 by <span>Domaći Zadatak</span> | all rights reserved!</div>
+
+   </section>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>

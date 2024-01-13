@@ -38,8 +38,16 @@
       <nav class="navbar">
          <a href="#home">početna</a>
          <a href="#about">Opis</a>
-         <a href="#courses">Časovi</a>
-         <a href="#teachers">Profesor</a>
+         <div class="dropdown">
+            <a href="javascript:void(0);" id="coursesDropdown" class="dropbtn">Časovi ▾</a>
+            <div class="dropdown-content">
+               <a href="pages/courses.html">naši kursevi</a>
+               <a href="#online-lessons">onlajn časovi</a>
+               <a href="#courses">ponuda</a>
+            </div>
+         </div>
+         <!-- <a href="#courses">Časovi</a> -->
+         <a href="#teachers">Profesori</a>
          <a href="#reviews">Ocene</a>
          <a href="#contact">Kontakt</a>
       </nav>
@@ -60,7 +68,7 @@
 
       <div class="content">
          <h3>Onlajn Časovi <span>Matematike</span></h3>
-         <a href="#contact" class="btn">Kontaktirajte Me</a>
+         <a href="#contact" class="btn">Kontaktirajte Nas</a>
       </div>
 
       <div class="image">
@@ -128,9 +136,9 @@
       </div>
 
       <div class="content">
-         <h3>Zašto odabrati moj onlajn čas?</h3>
-         <p>Sa dugogodišnjim iskustvom, interaktivnim materijalima i fleksibilnim rasporedom časova, moj online čas matematike pruža efikasno učenje koje se prilagođava vašem stilu razumevanja, omogućavajući vam da postignete uspeh u matematičkim veštinama iz udobnosti svog doma.</p>
-         <a href="#contact" class="btn">kontaktirajte me</a>
+         <h3>Zašto odabrati naš onlajn čas?</h3>
+         <p>Sa dugogodišnjim iskustvom, interaktivnim materijalima i fleksibilnim rasporedom časova, naš online čas matematike pruža efikasno učenje koje se prilagođava vašem stilu razumevanja, omogućavajući vam da postignete uspeh u matematičkim veštinama iz udobnosti svog doma.</p>
+         <a href="#contact" class="btn">kontaktirajte nas</a>
       </div>
 
    </div>
@@ -143,26 +151,28 @@
 
 <section class="courses" id="courses">
 
-   <h1 class="heading">moje <span>usluge</span></h1>
+   <h1 class="heading">naše <span>usluge</span></h1>
 
    <div class="swiper course-slider">
 
       <div class="swiper-wrapper">
 
          <div class="swiper-slide slide">
-            <img src="images/course-2.svg" alt="">
-            <h3>Pripreme za prijemni ispit</h3>
-            <p>Nudim pripremu za završni ispit na kraju osmog razreda, kao i pripreme za fakultet.</p>
+            <a href="pages/courses.html">
+               <img src="images/course-2.svg" alt="">
+               <h3>Pripreme za prijemni ispit</h3>
+               <p>Vršimo pripreme za završni ispit na kraju osmog razreda, kao i pripreme za fakultet.</p>
+            </a>
          </div>
          <div class="swiper-slide slide">
             <img src="images/course-3.svg" alt="">
             <h3>Onlajn časovi</h3>
-            <p>Čas traje 60 min i odvija se preko Zoom aplikacije i ja koristim Ipad za pisanje.</p>
+            <p>Čas traje 60 min i odvija se preko Zoom / Google Meet platforme.</p>
          </div>
          <div class="swiper-slide slide">
             <img src="images/course-5.svg" alt="">
             <h3>Izrada zadataka</h3>
-            <p>Sastavljam domaće, kontrolne i pismene zadatke za sve nivoe, kao i rešenja.</p>
+            <p>Sastavljamo domaće, kontrolne i pismene zadatke za sve nivoe, kao i rešenja.</p>
          </div>
          <div class="swiper-slide slide">
             <img src="images/course-1.svg" alt="">
@@ -193,14 +203,14 @@
 
 <section class="teachers" id="teachers">
 
-   <h1 class="heading">Nešto o <span>meni</span></h1>
+   <h1 class="heading">tim <span>stručnjaka</span></h1>
 
    <div class="swiper teachers-slider">
 
       <div class="swiper-wrapper">
 
          <div class="swiper-slide slide">
-            <img src="images/teacher-me2.png" alt="">
+            <img src="images/teacher-1.png" alt="">
             <div class="share">
                <a href="https://www.facebook.com/Mitke93" target="_blank" class="fab fa-facebook-f"></a>
                <a href="https://www.instagram.com/domaci.zadatak016/" target = "_blank" class="fab fa-instagram"></a>
@@ -211,14 +221,12 @@
          </div>
          
          <div class="swiper-slide slide">
-            <img src="images/tutor-10.png" alt="">
+            <img src="images/teacher-2.png" alt="">
             <div class="share">
-               <a href="https://www.facebook.com/Mitke93" target="_blank" class="fab fa-facebook-f"></a>
+               <a href="https://www.facebook.com/marko.djordjevic.50" target="_blank" class="fab fa-facebook-f"></a>
                <a href="https://www.instagram.com/domaci.zadatak016/" target = "_blank" class="fab fa-instagram"></a>
-               <a href="https://www.linkedin.com/in/aleksandar-mitic-49523319a/" target = "_blank" class="fab fa-linkedin"></a>
-               <a href="https://github.com/Alexandar016" target="_blank" class="fab fa-github"></a>
             </div>
-            <h3>Obrazovanje</h3>
+            <h3>Marko Đorđević</h3>
          </div>
 
          <div class="swiper-slide slide">
@@ -253,7 +261,7 @@
             <div class="user">
                <img src="images/user-1.png" alt="">
                <div class="user-info">
-                  <h3>Marko Đorđević</h3>
+                  <h3>Dario Banjac</h3>
                   <div class="stars">
                      <i class="fas fa-star"></i>
                      <i class="fas fa-star"></i>
@@ -364,7 +372,7 @@
 
 <section class="contact" id="contact">
 
-   <h1 class="heading"><span>Kontaktirajte</span> me</h1>
+   <h1 class="heading"><span>Kontaktirajte</span> nas</h1>
 
    <div class="row">
 
