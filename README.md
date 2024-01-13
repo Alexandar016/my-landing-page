@@ -10,15 +10,18 @@ Welcome to the "my-landing-page" repository. This project focuses on creating a 
   ├── 📁 css
   |     └── styles.css
   |
-  ├── 📁 js
-  |     └── script.js
-  |
   ├── 📁 images
   |     ├── logo.png
   |     ├── pic-1.png
   |     └── ...
-  ├── script.js
-  |  
+  |
+  ├── 📁 js
+  |     └── script.js
+  | 
+  ├── 📁 pages
+  |     ├── courses.html
+  |     └── thank_you.html
+  |
   └── index.html
 ```
 
@@ -34,9 +37,12 @@ Welcome to the "my-landing-page" repository. This project focuses on creating a 
    - JavaScript functionalities are implemented in `js/script.js`. Explore and enhance the interactivity of the webpage using JavaScript.
 
 4. **Images:**
-   - The `images` folder contains various flower images used in the webpage. You can add more images or replace existing ones as needed.
+   - The `images` folder contains various images used in the webpage. You can add more images or replace existing ones as needed.
 
-Feel free to customize and expand upon this foundation to create a unique and captivating flower shop webpage.
+5. **Pages:**
+   - The `pages` folder contains all the pages that are navigated and used in the webpage. You can add more pages or replace existing ones as needed.
+
+Feel free to customize and expand upon this foundation to create a unique and captivating landing webpage.
 
 Happy coding! 🌸🌼🌺
 
