@@ -576,6 +576,9 @@ section{
    .home .row .content h3{
       font-size: 6rem;
    }
+   .home .row .content h3 span{
+      font-size: 5rem;
+   }
 }
 
 @media (max-width:450px){
