@@ -148,6 +148,7 @@ section{
    font-size: 7rem;
    color:var(--white);
    line-height: 1;
+   text-transform: none;
 }
 
 .home .row .content h3 span{
