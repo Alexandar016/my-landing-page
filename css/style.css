@@ -63,6 +63,8 @@ section{
    color:var(--white);
    font-size: 1.8rem;
    padding:1rem 3rem;
+   text-transform: none;
+   /* text-decoration: underline; */
 }
 
 .btn:hover{
@@ -106,6 +108,7 @@ section{
    margin-left: 2rem;
    color:var(--light-white);
    font-size: 2rem;
+   text-transform: none;
 }
 
 .header .flex .navbar a:hover{
@@ -145,7 +148,7 @@ section{
 
 .home .row .content h3{
    margin-bottom: 1rem;
-   font-size: 7rem;
+   font-size: 8rem;
    color:var(--white);
    line-height: 1;
    text-transform: none;
@@ -153,7 +156,12 @@ section{
 
 .home .row .content h3 span{
    color:var(--green);
-   font-size: 8rem;
+   font-size: 6rem;
+   display: block;
+   text-transform: none;
+}
+.home .row .contact a{
+   text-transform: none;
 }
 
 .count .box-container{
@@ -205,7 +213,7 @@ section{
 }
 
 .about .row .content{
-   text-align: center;
+   text-align: left;
    flex:1 1 40rem;
 }
 
@@ -242,6 +250,7 @@ section{
    margin:1.5rem 0;
    font-size: 2rem;
    color:var(--white);
+   text-decoration: underline;
 }
 
 .courses .slide p{
@@ -442,13 +451,14 @@ section{
 .dropdown {
    display: inline-block;
 }
+
 .dropdown-content {
    display: none;
    position: absolute;
-   background-color: #f9f9f9;
    min-width: 160px;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 1;
+   background-color: var(--light-bg);
 }
 .dropdown-content a {
    color: black;
@@ -463,10 +473,26 @@ section{
    background-color: #f1f1f1;
 }
 
+.logo-container {
+   display: flex;
+   align-items: center;
+}
+
+.logo-image {
+   width: 30px;
+   height: 30px; 
+   margin-right: 10px; 
+}
+
+.logo-text {
+   font-size: 2.5rem;
+   color:var(--white);
+   text-decoration: none;
+}
+
 .footer{
    background-color: var(--light-bg);
    text-align: center;
-   /* padding-bottom: 7rem; */
 }
 
 .footer .share a{
@@ -491,6 +517,7 @@ section{
    border-top: .1rem solid var(--light-white);
    font-size: 2rem;
    color:var(--light-white);
+   text-transform: none;
 }
 
 .footer .credit span{

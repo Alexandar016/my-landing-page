@@ -12,7 +12,8 @@
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
    <!-- custom css file link  -->
    <link rel="stylesheet" href="../css/style.css">
    <link rel="stylesheet" href="../css/courses.css">
@@ -34,17 +35,24 @@
 
    <section class="flex">
 
-      <a href="#home" class="logo">Domaći Zadatak</a>
+      <a href="../index.html#home" class="logo-container">
+         <img src="../images/logo.png" alt="logo" class="logo-image">
+         <span class="logo-text">Domaći Zadatak</span>
+      </a>
 
       <nav class="navbar">
-         <a href="../index.html">početna</a>
+         <a href="../index.html#about">O nama</a>
          <div class="dropdown">
             <a href="javascript:void(0);" id="coursesDropdown" class="dropbtn">Časovi ▾</a>
             <div class="dropdown-content">
-               <a href="#home">naši kursevi</a>
-               <a href="#online-lessons">onlajn časovi</a>
+               <a href="pages/courses.html">Naši Kursevi</a>
+               <a href="../index.html#online-lessons">Onlajn Časovi</a>
+               <a href="../index.html#courses">Ponuda</a>
             </div>
          </div>
+         <!-- <a href="#courses">Časovi</a> -->
+         <a href="../index.html#reviews">Ocene</a>
+         <a href="../index.html#teachers">Profesori</a>
          <a href="#contact">Kontakt</a>
       </nav>
 
@@ -57,7 +65,7 @@
 <!-- header section ends -->
 
 <section class="online-courses" id="online-courses">
-   <h1 class="heading">besplatne<span> pripreme</span></h1>
+   <h1 class="heading"><span>besplatne </span>pripreme</h1>
    <div class="row">
       <div class="course">
          <img src="../images/MalaMatura.png" alt="Course 1">
@@ -123,14 +131,16 @@
    <section>
 
       <div class="share">
-         <a href="https://www.facebook.com/domaci.zadatak016" target="_blank" class="fab fa-facebook-f"></a>
-         <a href="https://www.instagram.com/domaci.zadatak016/" target="_blank" class="fab fa-instagram"></a>
-         <a href="https://www.youtube.com/channel/UCjykM4fRlxevw76npUvLxVQ" target="_blank" class="fab fa-youtube"></a>
-         <a href="https://github.com/Alexandar016" target="_blank" class="fab fa-github"></a>
-         <a href="https://www.linkedin.com/in/aleksandar-mitic-49523319a/" target="_blank" class="fab fa-linkedin"></a>
+         <a href="https://www.facebook.com/domaci.zadatak016" target="_blank" class="fab fa-facebook-f" title="Facebook"></a>
+         <a href="https://www.instagram.com/domaci.zadatak016/" target="_blank" class="fab fa-instagram" title="Instagram"></a>
+         <a href="https://www.youtube.com/channel/UCjykM4fRlxevw76npUvLxVQ" target="_blank" class="fab fa-youtube" title="YouTube"></a>
+         <a href="https://github.com/Alexandar016" target="_blank" class="fab fa-github" title="GitHub"></a>
+         <a href="https://www.linkedin.com/in/aleksandar-mitic-49523319a/" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+         <a href="mailto:domaci.zadatak016@gmail.com" class="material-icons" title="Email">mail</a>
+         <a href="tel:+381653477710" class="material-icons" title="Phone">phone</a>
       </div>
 
-      <div class="credit">&copy; copyright @ 2024 by <span>Domaći Zadatak</span> | all rights reserved!</div>
+      <div class="credit">&copy; Copyright @ 2024 by <span>Domaći Zadatak</span> | Sva prava zadržana!</div>
 
    </section>
 
