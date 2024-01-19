@@ -1,62 +1,136 @@
 /* online courses section styles */
 .online-courses {
-    padding: 80px 0;
- }
- 
- .online-courses .heading {
-    text-align: center;
-    margin-bottom: 50px;
- }
- 
- .online-courses .row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
- }
- 
- .online-courses .course {
-    width: 45%;
-    margin-bottom: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
- }
- 
- .online-courses .course img {
-    width: 100%;
-    height: auto;
- }
- 
- .online-courses .course p {
-    padding: 20px;
-    font-size: 16px;
-    text-align:left;
-    background-color: white;
-    text-transform: none;
- }
- 
- .online-courses .course a.btn {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 0 0 8px 8px;
- }
- 
- .online-courses .course a.btn:hover {
-    background-color: #297fb8;
- }
- 
- /* For single-course block in the last row */
- .online-courses .single-course {
-    width: 100%;
- }
- 
+   padding: 80px 0;
+}
+
+.online-courses .heading {
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.online-courses .row {
+display: flex;
+align-items: center;
+gap: 1.5rem;
+flex-wrap: wrap-reverse;
+justify-content: center;
+}
+
+.online-courses .course {
+margin-bottom: 30px;
+padding-left: 60px;
+padding-right: 60px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+overflow: hidden;
+background-color: var(--black);
+text-align: center;
+}
+/* .online-courses .course h3{
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+   font-size: 3.5rem;
+   color:var(--white);
+   line-height: 1;
+   text-transform: none;
+   text-align: center;
+}
+.online-courses .course h3 span{
+   display: block;
+   color:var(--green);
+   text-transform: none;
+} */
+.online-courses .course img {
+   width: 400px;
+   height: 200px;
+}
+
+.online-courses .course p {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 0;
+   margin-right: 0;
+   font-size: 1.8rem;
+   text-align:left;
+   color:var(--light-white);
+   text-transform: none;
+}
+.online-courses .course p a{
+   text-decoration: underline;
+   color: white;
+}
+.online-courses .course a{
+   margin-bottom: 10px;
+   font-size: 2rem;
+}
+
+.classes {
+   padding: 80px 0;
+}
+.classes .card {
+   display: flex;
+   margin-bottom: 30px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   overflow: hidden;
+   background-color: var(--black);
+}
+.classes img {
+   width: 50%;
+   height: auto;
+}
+.classes .card-content {
+   padding: 20px;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.classes .card-content h3 {
+   color: var(--white);
+}
+.classes .card-content p {
+   color: var(--light-white);
+}
+.classes .card-content .btn {
+   margin-top: 1rem;
+   margin-right: 1rem;
+   align-self: flex-end;
+}
+
+/* Styles for the new prices section */
+.prices {
+   padding: 80px 0;
+}
+.price-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 30px;
+}
+.price-table th {
+   padding: 15px;
+   color: var(--white);
+   background-color: var(--black);
+   text-align: left;
+}
+.price-table tr {
+   border-bottom: 1px solid var(--light-white);
+}
+.price-table td {
+   padding: 15px;
+   color: var(--white);
+   text-align: left;
+}
+.price-table td:nth-child(odd) {
+   background-color: var(--black);
+}
+
+
+
  /* Media query for responsiveness */
  @media (max-width: 768px) {
     .online-courses .course {
-       width: 100%;
+       width: 90%;
     }
  }
  
