@@ -73,3 +73,13 @@ var swiper = new Swiper(".reviews-slider", {
       },
    },
 });
+
+window.onscroll = () =>{
+  const gotopButton = document.querySelector('.gotop');
+  const isBottomOfPage = window.innerHeight + window.scrollY >= document.body.scrollHeight;
+  if (isBottomOfPage) {
+    gotopButton.classList.add('active');
+  } else {
+    gotopButton.classList.remove('active');
+  }
+}

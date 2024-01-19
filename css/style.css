@@ -218,16 +218,18 @@ section{
 }
 
 .about .row .content h3{
-   font-size: 3rem;
+   font-size: 3.5rem;
    color:var(--white);
+   /* color: #00E77F; */
    text-transform: none;
 }
 
 .about .row .content p{
    padding:1rem 0;
    line-height: 2;
-   font-size: 1.6rem;
+   font-size: 1.8rem;
    color:var(--light-white);
+   /* color: white; */
    text-transform: none;
    text-align: justify;
 }
@@ -276,7 +278,7 @@ section{
 }
 
 .teachers .slide img{
-   height: auto;
+   height: 100%;
    width: 100%;
    object-fit: cover;
    border-radius: .5rem;
@@ -524,8 +526,31 @@ section{
    color:var(--green);
 }
 
-
-
+.gotop{
+   position: fixed;
+   bottom: 24px;
+   right: 10px;
+   height: 4rem;
+   width: 4rem;
+   line-height: 1.9rem;
+   border-radius: 5rem;
+   background-color: var(--light-bg);
+   text-align: center;
+   display: none;
+}
+.gotop img{
+   height: 3.5rem;
+   width: 3rem;
+   object-fit: cover;
+   filter: invert(1);
+}
+.gotop.active{
+   display: block;
+}
+.gotop:hover{
+   background-color: var(--black);
+   color:var(--white);
+}
 
 
 
@@ -605,6 +630,24 @@ section{
    }
    .home .row .content h3 span{
       font-size: 5rem;
+   }
+   .gotop{
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+      height: 2rem;
+      width: 2rem;
+      line-height: 1.9rem;
+      border-radius: 5rem;
+      background-color: var(--light-bg);
+      text-align: center;
+      display: none;
+   }
+   .gotop img{
+      height: 1.5rem;
+      width: 1rem;
+      object-fit: cover;
+      filter: invert(1);
    }
 }
 
