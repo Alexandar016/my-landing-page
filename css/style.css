@@ -558,10 +558,31 @@ section{
    color:var(--white);
 }
 
+.thank-you {
+   text-align: center;
+   text-transform: none;
+}
+ 
+ .thank-you h1 {
+   margin-top: 100px;
+   font-size: 5em; 
+   color:white;
+ }
+ .thank-you p {
+   margin-bottom: 50px;
+   font-size: 3em;
+   color:var(--light-white);
+   text-transform: none;
+ }
 
-
-
-
+ .thank-you .btn a {
+   display: inline-block;
+   text-decoration: underline;
+   border-radius: 5px;
+   font-size: 3rem;
+   text-align: center;
+   /* Additional styles for the button if necessary */
+ }
 
 
 

@@ -383,7 +383,7 @@
          <img src="images/contact-img.svg" alt="">
       </div>
 
-      <form name="contact" netlify>
+      <form name="contact" method="POST" data-netlify="true" action="pages/thank_you">
          <div class="contact-info">
             <p class="contact-detail">Telefon: <span>+381 65 3477710</span></p>
             <p class="contact-detail">E-mail: <span>domaci.zadatak016@gmail.com</span></p>
@@ -439,25 +439,19 @@
 
 <!-- footer section ends -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- swiper js link  -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script>
+   function submitForm(event) {
+       // You can add any custom validation or handling here
+       // Make sure to prevent the default form submission
+       event.preventDefault();
+       // The form will be submitted automatically by Netlify
+   }
+</script>
 
 </body>
 </html>

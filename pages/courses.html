@@ -67,7 +67,7 @@
 <section class="online-courses" id="online-courses">
    <h1 class="heading">besplatne <span>pripreme</span></h1>
    <div class="row">
-      <div class="course">
+      <!-- <div class="course">
          <img src="../images/MalaMatura-Inf.webp" alt="Course 1">
          <p class="course-description">
             - <a href="https://drive.google.com/drive/folders/1qzrS9e7xkzWcD4H5pQMg1ieaDmD5D6mb?usp=sharing" target="_blank">Materijal</a> sa prethodnih časova.<br>
@@ -75,6 +75,15 @@
             - Vreme održavanja časa: Nedeljom u 16:00h
          </p>
          <a href="https://uni-wuppertal.zoom.us/j/68568781486?pwd=ckRvWTA1TTNpQ0ZDQkdDRndNbTJ5dz09" target="_blank" class="btn">Otvori čas</a>
+      </div> -->
+      <div class="course">
+         <img src="../images/MalaMatura-Matematika.webp" alt="Course 3">
+         <p class="course-description">
+            - <a href="https://drive.google.com/drive/folders/1XejvyKMwtTOTBCeIyCP1ISAHvlrgRoYe" target="_blank">Materijal</a> sa prethodnih časova.<br>
+            - Online besplatan čas putem Google Meet aplikacije. <br> 
+            - Vreme održavanja časa: Nedeljom u 14:00h
+         </p>
+         <a href="https://meet.google.com/tkn-zvhr-byu" target="_blank" class="btn">Otvori čas</a>
       </div>
       <div class="course">
          <img src="../images/Prip-Mat.webp" alt="Course 2">
@@ -85,16 +94,7 @@
          </p>
          <a href="https://uni-wuppertal.zoom.us/j/68568781486?pwd=ckRvWTA1TTNpQ0ZDQkdDRndNbTJ5dz09" target="_blank" class="btn">Otvori čas</a>
       </div>
-      <div class="course">
-         <img src="../images/MalaMatura-Matematika.webp" alt="Course 3">
-         <p class="course-description">
-            - <a href="https://drive.google.com/drive/folders/1XejvyKMwtTOTBCeIyCP1ISAHvlrgRoYe" target="_blank">Materijal</a> sa prethodnih časova.<br>
-            - Online besplatan čas putem Google Meet aplikacije. <br> 
-            - Vreme održavanja časa: Nedeljom u 14:00h
-         </p>
-         <a href="https://youtube.com/playlist?list=PLP39ZOVXyouJyQIVN-EdqLgXu0PaPwL_B&si=lXIty72-3dBEIC0N" target="_blank" class="btn">Otvori čas</a>
-      </div>
-      <div class="course">
+      <!-- <div class="course">
          <img src="../images/MalaMatura-SrpskiJez.webp" alt="Course 4">
          <p class="course-description">
             - <a href="https://drive.google.com/drive/folders/1qzrS9e7xkzWcD4H5pQMg1ieaDmD5D6mb?usp=drive_link" target="_blank">Materijal</a> sa prethodnih časova.<br>
@@ -102,7 +102,7 @@
             - Vreme održavanja časa: Nedeljom u 14:00h
          </p>
          <a href="https://youtube.com/playlist?list=PLP39ZOVXyouJyQIVN-EdqLgXu0PaPwL_B&si=lXIty72-3dBEIC0N" target="_blank" class="btn">Otvori čas</a>
-      </div>
+      </div> -->
    </div>
 </section>
 
@@ -155,24 +155,32 @@
          <th>Cena</th>
       </tr>
       <tr>
-         <td>Pun čas (60 min) - Privatan i Online</td>
+         <td>Individualni čas (60 min) - Privatan i Online</td>
          <td>1.200,00 dinara.</td>
       </tr>
       <tr>
-         <td>Dvočas (90 min) - Privatan i Online</td>
-         <td>1.500,00 dinara.</td>
+         <td>Individualni dvočas (90 min) - Privatan i Online</td>
+         <td>1.600,00 dinara.</td>
       </tr>
       <tr>
-         <td>Čas Programiranja (60 min) - Online</td>
-         <td>1.500,00 dinara.</td>
+         <td>Individualni čas Programiranja (60 min) - Online</td>
+         <td>1.800,00 dinara.</td>
+      </tr>
+      <tr>
+         <td>Praćenje školskog gradiva (4 dvočasa mesečno) - Privatan i Online</td>
+         <td>6.000,00 dinara/mesec</td>
+      </tr>
+      <tr>
+         <td>Individualno četiri dvočasa nedeljno (16 dvočasa mesečno) - Privatan i Online</td>
+         <td>22.000,00 dinara/mesec</td>
+      </tr>
+      <tr>
+         <td>Grupni čas - Privatan i Online</td>
+         <td>Dogovor</td>
       </tr>
       <tr>
          <td>Besplatne pripreme - Online</td>
-         <td>0 dinara (ili donacije)</td>
-      </tr>
-      <tr>
-         <td>Četiri dvočasa nedeljno (16 dvočasa mesečno) - Privatan i Online</td>
-         <td>18.000,dinara/mesec</td>
+         <td>0,00 dinara (ili donacije)</td>
       </tr>
    </table>
 </section>
@@ -189,7 +197,7 @@
          <img src="../images/contact-img.svg" alt="">
       </div>
 
-      <form name="contact" netlify>
+      <form name="contact" method="POST" data-netlify="true" action="thank_you">
          <div class="contact-info">
             <p class="contact-detail">Telefon: <span>+381 65 3477710</span></p>
             <p class="contact-detail">E-mail: <span>domaci.zadatak016@gmail.com</span></p>
@@ -254,6 +262,14 @@
 
 <!-- custom js file link  -->
 <script src="../js/script.js"></script>
+<script>
+   function submitForm(event) {
+       // You can add any custom validation or handling here
+       // Make sure to prevent the default form submission
+       event.preventDefault();
+       // The form will be submitted automatically by Netlify
+   }
+</script>
 
 </body>
 </html>
