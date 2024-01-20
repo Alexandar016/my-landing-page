@@ -1,6 +1,8 @@
 /* online courses section styles */
 .online-courses {
-   padding: 80px 0;
+   padding-top: 100px;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 
 .online-courses .heading {
@@ -65,7 +67,9 @@ text-align: center;
 }
 
 .classes {
-   padding: 80px 0;
+   padding-top: 2rem;
+   padding-left: 35px;
+   padding-right: 35px;
 }
 .classes .card {
    display: flex;
@@ -76,11 +80,11 @@ text-align: center;
    background-color: var(--black);
 }
 .classes img {
-   width: 50%;
+   width: 25%;
    height: auto;
 }
 .classes .card-content {
-   padding: 20px;
+   padding: 10px;
    width: 50%;
    display: flex;
    flex-direction: column;
@@ -88,6 +92,7 @@ text-align: center;
 }
 .classes .card-content h3 {
    color: var(--white);
+   font-size: 3rem;
 }
 .classes .card-content p {
    color: var(--light-white);
@@ -100,7 +105,9 @@ text-align: center;
 
 /* Styles for the new prices section */
 .prices {
-   padding: 80px 0;
+   padding-top: 2rem;
+   padding-left: 35px;
+   padding-right: 35px;
 }
 .price-table {
    width: 100%;

@@ -39,11 +39,11 @@
       </a>
 
       <nav class="navbar">
-         <a href="#about">O nama</a>
+         <a href="#count">O nama</a>
          <div class="dropdown">
-            <a href="#courses" id="coursesDropdown" class="dropbtn">Ponuda ▾</a>
+            <a href="javascript:void(0);" id="coursesDropdown" class="dropbtn">Ponuda ▾</a>
             <div class="dropdown-content">
-               <a href="pages/courses.html#heading">Besplatne Pripreme</a>
+               <a href="pages/courses.html#online-courses">Besplatne Pripreme</a>
                <a href="pages/courses.html#classes">Časovi</a>
                <a href="pages/courses.html#prices">Cenovnik</a>
             </div>
@@ -84,7 +84,7 @@
 
 <!-- couter section stars  -->
 
-<section class="count">
+<section class="count" id="count">
 
    <div class="box-container">
 
@@ -378,14 +378,17 @@
 <section class="contact" id="contact">
 
    <h1 class="heading">kontaktirajte <span>nas</span></h1>
-
+   
    <div class="row">
-
       <div class="image">
          <img src="images/contact-img.svg" alt="">
       </div>
 
       <form name="contact" netlify>
+         <div class="contact-info">
+            <p class="contact-detail">Telefon: <span>+381 65 3477710</span></p>
+            <p class="contact-detail">E-mail: <span>domaci.zadatak016@gmail.com</span></p>
+         </div>
          <input type="hidden" name="form-name" value="contact" />
          <span>Ime i Prezime</span>
          <input type="text" required placeholder="Unesite vaše puno ime" maxlength="50" name="name" class="box">
