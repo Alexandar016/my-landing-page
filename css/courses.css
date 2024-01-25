@@ -19,6 +19,7 @@
 }
 
 .online-courses .course {
+  width: 500px;
   margin-bottom: 30px;
   padding-left: 40px;
   padding-right: 40px;
@@ -58,6 +59,7 @@
 }
 
 .online-courses .course p {
+  height: 90px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 0;
@@ -154,7 +156,27 @@
 .price-table td:nth-child(odd) {
   background-color: var(--black);
 }
+/* Media query for responsiveness */
+@media (max-width: 1024px) {
+  .online-courses .course p {
+    height: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .online-courses .course p {
+    height: 60px;
+  }
+  .online-courses .course {
+    width: 90%;
+  }
+  .online-courses .course img {
+    width: 400px;
+  }
+}
 @media (max-width: 480px) {
+  .online-courses .course p {
+    height: 50px;
+  }
   p {
     font-size: 14px !important;
   }
@@ -182,13 +204,4 @@
   }
 }
 
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .online-courses .course {
-    width: 90%;
-  }
-  .online-courses .course img {
-    width: 400px;
-  }
-}
 //Media query for phones
