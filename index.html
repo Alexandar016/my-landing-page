@@ -1,458 +1,610 @@
 <!DOCTYPE html>
 <html lang="sr">
-<head>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Internet stranica Domaci Zadatak za onlajn i privatne casove.">
-   <title>Domaći Zadatak</title>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Internet stranica Domaci Zadatak za onlajn i privatne casove."
+    />
+    <title>Domaći Zadatak</title>
 
-   <!-- swiper css link  -->
-   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- swiper css link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
 
-   <link rel="icon" type="image/x-icon" href="images/logo-small.png">
-   <link rel="shortcut icon" type="image/x-icon" href="images/logo-small.png">
-   <!-- <meta name="google-site-verification" content="" /> -->
-   <meta property="og:title" content="Domaci Zadatak">
-   <meta property="og:description" content="Internet stranica Domaci Zadatak za onlajn i privatne casove.">
-   <meta property="og:image" content="images/logo.png">
-   <meta property="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="images/logo-small.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/logo-small.png"
+    />
+    <!-- <meta name="google-site-verification" content="" /> -->
+    <meta property="og:title" content="Domaci Zadatak" />
+    <meta
+      property="og:description"
+      content="Internet stranica Domaci Zadatak za onlajn i privatne casove."
+    />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <!-- header section starts  -->
 
-</head>
-<body>
-   
-<!-- header section starts  -->
+    <header class="header">
+      <section class="flex">
+        <a href="#home" class="logo-container">
+          <img src="images/logo-small.png" alt="logo" class="logo-image" />
+          <span class="logo-text">Domaći Zadatak</span>
+        </a>
 
-<header class="header">
-
-   <section class="flex">
-
-      <a href="#home" class="logo-container">
-         <img src="images/logo-small.png" alt="logo" class="logo-image">
-         <span class="logo-text">Domaći Zadatak</span>
-      </a>
-
-      <nav class="navbar">
-         <a href="#count">O nama</a>
-         <div class="dropdown">
-            <a href="javascript:void(0);" id="coursesDropdown" class="dropbtn">Ponuda ▾</a>
+        <nav class="navbar">
+          <a href="#count">O nama</a>
+          <div class="dropdown">
+            <a href="javascript:void(0);" id="coursesDropdown" class="dropbtn"
+              >Ponuda ▾</a
+            >
             <div class="dropdown-content">
-               <a href="pages/courses.html#online-courses">Besplatne Pripreme</a>
-               <a href="pages/courses.html#classes">Časovi</a>
-               <a href="pages/courses.html#prices">Cenovnik</a>
-               <a href="#courses">Usluge</a>
+              <a href="pages/courses.html#online-courses">Besplatne Pripreme</a>
+              <a href="pages/courses.html#classes">Časovi</a>
+              <a href="pages/courses.html#prices">Cenovnik</a>
+              <a href="#courses">Usluge</a>
             </div>
-         </div>
-         <a href="#teachers">Profesori</a>
-         <a href="#reviews">Ocene</a>
-         <a href="#contact">Kontakt</a>
-      </nav>
+          </div>
+          <a href="#teachers">Profesori</a>
+          <a href="#reviews">Ocene</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
 
-      <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </section>
+    </header>
 
-   </section>
+    <!-- header section ends -->
 
-</header>
+    <!-- home section starts  -->
 
-<!-- header section ends -->
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Škola <span> Prirode i Društva</span></h3>
+          <a href="#about" class="btn">Više o nama</a>
+        </div>
 
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-   <div class="row">
-
-      <div class="content">
-         <h3>Škola <span> Prirode i Društva</span></h3>
-         <a href="#about" class="btn">Više o nama</a>
+        <div class="image">
+          <img src="images/homg-img.svg" alt="" />
+        </div>
       </div>
+    </section>
 
-      <div class="image">
-         <img src="images/homg-img.svg" alt="">
-      </div>
+    <!-- home section ends -->
 
-   </div>
+    <!-- couter section stars  -->
 
-</section>
-
-<!-- home section ends -->
-
-<!-- couter section stars  -->
-
-<section class="count" id="count">
-
-   <div class="box-container">
-
-      <div class="box">
-         <i class="fas fa-graduation-cap"></i>
-         <div class="content">
+    <section class="count" id="count">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <div class="content">
             <h3>svi</h3>
             <p>uzrasti</p>
-         </div>
-      </div>
+          </div>
+        </div>
 
-      <div class="box">
-         <i class="fas fa-user-graduate"></i>
-         <div class="content">
+        <div class="box">
+          <i class="fas fa-user-graduate"></i>
+          <div class="content">
             <h3>100+</h3>
             <p>studenata</p>
-         </div>
-      </div>
+          </div>
+        </div>
 
-      <div class="box">
-         <i class="fas fa-chalkboard-user"></i>
-         <div class="content">
+        <div class="box">
+          <i class="fas fa-chalkboard-user"></i>
+          <div class="content">
             <h3>60 min</h3>
             <p>čas</p>
-         </div>
-      </div>
+          </div>
+        </div>
 
-      <div class="box">
-         <i class="fas fa-face-smile"></i>
-         <div class="content">
+        <div class="box">
+          <i class="fas fa-face-smile"></i>
+          <div class="content">
             <h3>100%</h3>
             <p>Srećnih đaka</p>
-         </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-   </div>
+    <!-- couter section ends -->
 
-</section>
+    <!-- about section starts  -->
 
-<!-- couter section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-   <div class="row">
-
-      <div class="image">
-         <img src="images/about-img.svg" alt="">
+    <section class="about" id="about">
+      <div class="row">
+        <div class="image">
+          <img src="images/about-img.svg" alt="" />
+        </div>
+        <div class="content">
+          <h3>Malo o Domaćem Zadatku</h3>
+          <p>
+            Naš tim pruža personalizovane privatne i online časove koji se
+            ističu kroz pažljivo prilagođen pristup svakom učeniku. Sa stručnim
+            nastavnicima i individualizovanim planom nastave, naši časovi
+            omogućavaju đacima i studentima da brže napreduju, reše specifične
+            izazove i ostvare svoje akademske ciljeve na efikasan i podržavajući
+            način.
+          </p>
+          <h3>Zašto odabrati naš čas?</h3>
+          <p>
+            Sa dugogodišnjim iskustvom, interaktivnim materijalima i
+            fleksibilnim rasporedom časova, naša škola pruža efikasno učenje
+            koje se prilagođava vašem stilu razumevanja, omogućavajući vam da
+            postignete uspeh u prirodnim i društvenim naukama iz udobnosti svog
+            doma ili na našoj adresi.
+          </p>
+          <a href="#contact" class="btn">Kontaktirajte nas</a>
+        </div>
       </div>
-      <div class="content">
-         <h3>Malo o Domaćem Zadatku</h3>
-         <p>Naš tim pruža personalizovane privatne i online časove koji se ističu kroz pažljivo prilagođen pristup svakom učeniku. Sa stručnim nastavnicima i individualizovanim planom nastave, naši časovi omogućavaju đacima i studentima da brže napreduju, reše specifične izazove i ostvare svoje akademske ciljeve na efikasan i podržavajući način.</p>
-         <h3>Zašto odabrati naš čas?</h3>
-         <p>Sa dugogodišnjim iskustvom, interaktivnim materijalima i fleksibilnim rasporedom časova, naša škola pruža efikasno učenje koje se prilagođava vašem stilu razumevanja, omogućavajući vam da postignete uspeh u prirodnim i društvenim naukama iz udobnosti svog doma ili na našoj adresi.</p>
-         <a href="#contact" class="btn">Kontaktirajte nas</a>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- courses section starts  -->
+
+    <section class="courses" id="courses">
+      <h1 class="heading">naše <span>usluge</span></h1>
+
+      <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div>
+              <img src="images/course-2.svg" alt="" />
+              <h3>
+                <a href="pages/courses.html#online-courses"
+                  >besplatne pripreme</a
+                >
+              </h3>
+              <p>
+                Vršimo besplatne pripreme za maturski ispit, kao i pripreme za
+                fakultet.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div>
+              <img src="images/course-5.svg" alt="" />
+              <h3>
+                <a href="pages/courses.html#cas-matematika"
+                  >časovi matematike</a
+                >
+              </h3>
+              <p>
+                Privatni ili Online časovi Matematike za osnovce, srednjoskolce
+                i fakultet.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div>
+              <img src="images/course-4.svg" alt="" />
+              <h3>
+                <a href="pages/courses.html#cas-programiranje"
+                  >časovi programiranja</a
+                >
+              </h3>
+              <p>
+                Pružamo Online pomoć pri razumevanju objektno orijentisanog
+                programiranja.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div>
+              <img src="images/course-1.svg" alt="" />
+              <h3>
+                <a href="pages/courses.html#cas-srpski"
+                  >Časovi Srpskog Jezika</a
+                >
+              </h3>
+              <p>
+                Pripremite se dobro za prijemni ispit uz naše profesore Srpskog
+                jezika.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div>
+              <img src="images/course-3.svg" alt="" />
+              <h3>Časovi Informatike</h3>
+              <p>
+                Za naše najmlađe učenike pružamo časove informatike za osnovce.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div>
+              <img src="images/course-6.svg" alt="" />
+              <h3>Izrada Zadataka</h3>
+              <p>
+                Sastavljamo domaće, kontrolne i pismene zadatke za sve nivoe,
+                kao i rešenja.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
       </div>
+    </section>
 
-   </div>
+    <!-- courses section ends -->
 
-</section>
+    <!-- teachers section starts  -->
 
-<!-- about section ends -->
+    <section class="teachers" id="teachers">
+      <h1 class="heading">tim <span>stručnjaka</span></h1>
 
-<!-- courses section starts  -->
-
-<section class="courses" id="courses">
-
-   <h1 class="heading">naše <span>usluge</span></h1>
-
-   <div class="swiper course-slider">
-
-      <div class="swiper-wrapper">
-
-         <div class="swiper-slide slide">
-            <img src="images/course-2.svg" alt="">
-            <h3><a href="pages/courses.html#online-courses">besplatne pripreme</a></h3>
-            <p>Vršimo besplatne pripreme za maturski ispit, kao i pripreme za fakultet.</p>
-         </div>
-         <div class="swiper-slide slide">
-            <img src="images/course-5.svg" alt="">
-            <h3><a href="pages/courses.html#cas-matematika">časovi matematike</a></h3>
-            <p>Privatni ili Online časovi Matematike za osnovce, srednjoskolce i fakultet.</p>
-         </div>
-         <div class="swiper-slide slide">
-            <img src="images/course-4.svg" alt="">
-            <h3><a href="pages/courses.html#cas-programiranje">časovi programiranja</a></h3>
-            <p>Pružamo Online pomoć pri razumevanju objektno orijentisanog programiranja.</p>
-         </div>
-         <div class="swiper-slide slide">
-            <img src="images/course-1.svg" alt="">
-            <h3><a href="pages/courses.html#cas-srpski">Časovi Srpskog Jezika</a></h3>
-            <p>Pripremite se dobro za prijemni ispit uz naše profesore Srpskog jezika.</p>
-         </div>
-         <div class="swiper-slide slide">
-            <img src="images/course-3.svg" alt="">
-            <h3>Časovi Informatike</h3>
-            <p>Za naše najmlađe učenike pružamo časove informatike za osnovce.</p>
-         </div>
-         <div class="swiper-slide slide">
-            <img src="images/course-6.svg" alt="">
-            <h3>Izrada Zadataka</h3>
-            <p>Sastavljamo domaće, kontrolne i pismene zadatke za sve nivoe, kao i rešenja.</p>
-         </div>
-      </div>
-
-      <div class="swiper-pagination"></div>
-
-   </div>
-
-</section>
-
-<!-- courses section ends -->
-
-<!-- teachers section starts  -->
-
-<section class="teachers" id="teachers">
-
-   <h1 class="heading">tim <span>stručnjaka</span></h1>
-
-   <div class="swiper teachers-slider">
-
-      <div class="swiper-wrapper">
-
-         
-         <div class="swiper-slide slide">
-            <img src="images/teacher-1.webp" alt="">
+      <div class="swiper teachers-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/teacher-1.webp" alt="" />
             <div class="share">
-               <a href="https://www.facebook.com/domaci.zadatak016" target="_blank" class="fab fa-facebook-f"></a>
-               <a href="https://www.instagram.com/domaci.zadatak016/" target = "_blank" class="fab fa-instagram"></a>
+              <a
+                href="https://www.facebook.com/domaci.zadatak016"
+                target="_blank"
+                class="fab fa-facebook-f"
+              ></a>
+              <a
+                href="https://www.instagram.com/domaci.zadatak016/"
+                target="_blank"
+                class="fab fa-instagram"
+              ></a>
             </div>
             <h3>Marko Đorđević</h3>
-         </div>
+          </div>
 
-         <div class="swiper-slide slide">
-            <img src="images/teacher-2.webp" alt="">
+          <div class="swiper-slide slide">
+            <img src="images/teacher-2.webp" alt="" />
             <div class="share">
-               <a href="https://www.facebook.com/jelenap95" target="_blank" class="fab fa-facebook-f"></a>
-               <a href="https://www.instagram.com/domaci.zadatak016/" target = "_blank" class="fab fa-instagram"></a>
-               <a href="https://www.linkedin.com/in/jelena-petrović-a9a469213/" target = "_blank" class="fab fa-linkedin"></a>
+              <a
+                href="https://www.facebook.com/jelenap95"
+                target="_blank"
+                class="fab fa-facebook-f"
+              ></a>
+              <a
+                href="https://www.instagram.com/domaci.zadatak016/"
+                target="_blank"
+                class="fab fa-instagram"
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/jelena-petrović-a9a469213/"
+                target="_blank"
+                class="fab fa-linkedin"
+              ></a>
             </div>
             <h3>Jelena Petrović</h3>
-         </div>
-         <div class="swiper-slide slide">
-            <img src="images/teacher-3.webp" alt="">
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/teacher-3.webp" alt="" />
             <div class="share">
-               <a href="https://www.facebook.com/Mitke93" target="_blank" class="fab fa-facebook-f"></a>
-               <a href="https://www.instagram.com/domaci.zadatak016/" target = "_blank" class="fab fa-instagram"></a>
-               <a href="https://www.linkedin.com/in/aleksandar-mitic-49523319a/" target = "_blank" class="fab fa-linkedin"></a>
-               <a href="https://github.com/Alexandar016" target="_blank" class="fab fa-github"></a>
+              <a
+                href="https://www.facebook.com/Mitke93"
+                target="_blank"
+                class="fab fa-facebook-f"
+              ></a>
+              <a
+                href="https://www.instagram.com/domaci.zadatak016/"
+                target="_blank"
+                class="fab fa-instagram"
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/aleksandar-mitic-49523319a/"
+                target="_blank"
+                class="fab fa-linkedin"
+              ></a>
+              <a
+                href="https://github.com/Alexandar016"
+                target="_blank"
+                class="fab fa-github"
+              ></a>
             </div>
             <h3>Aleksandar Mitić</h3>
-         </div>
-         <div class="swiper-slide slide">
-            <img src="images/teacher-4.webp" alt="">
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/teacher-4.webp" alt="" />
             <h3>Srpski Jezik</h3>
-         </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
-   </div>
-</section>
+    </section>
 
-<!-- teachers section ends -->
+    <!-- teachers section ends -->
 
-<!-- reviews section starts  -->
+    <!-- reviews section starts  -->
 
-<section class="reviews" id="reviews">
+    <section class="reviews" id="reviews">
+      <h1 class="heading">ocene <span>đaka</span></h1>
 
-   <h1 class="heading"> ocene <span>đaka</span></h1>
-
-   <div class="swiper reviews-slider">
-
-      <div class="swiper-wrapper">
-
-         <div class="swiper-slide slide">
-            <p>Fantastična platforma za učenje matematike! Jasna objašnjenja i interaktivni pristup čine matematiku lako razumljivom i zanimljivom.</p>
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <p>
+              Fantastična platforma za učenje matematike! Jasna objašnjenja i
+              interaktivni pristup čine matematiku lako razumljivom i
+              zanimljivom.
+            </p>
             <div class="user">
-               <img src="images/user-1.png" alt="">
-               <div class="user-info">
-                  <h3>Dario Banjac</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star-half-alt"></i>
-                  </div>
-               </div>
+              <img src="images/user-1.png" alt="" />
+              <div class="user-info">
+                <h3>Dario Banjac</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
 
-         <div class="swiper-slide slide">
-            <p>Online časovi su mi pomogli da savladam zadatke iz programiranja. Profesor je stručan i pristupačan, i u potpunosti se prilagodio mojim potrebama.</p>
+          <div class="swiper-slide slide">
+            <p>
+              Online časovi su mi pomogli da savladam zadatke iz programiranja.
+              Profesor je stručan i pristupačan, i u potpunosti se prilagodio
+              mojim potrebama.
+            </p>
             <div class="user">
-               <img src="images/user-1.png" alt="">
-               <div class="user-info">
-                  <h3>Sekulić, 21 godina</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star-half-alt"></i>
-                  </div>
-               </div>
+              <img src="images/user-1.png" alt="" />
+              <div class="user-info">
+                <h3>Sekulić, 21 godina</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
 
-         <div class="swiper-slide slide">
-            <p>Oduševljena sam dinamičnim pristupom časovima. Vežbe i testovi su odlični za proveru razumevanja gradiva, što mi je pomoglo da se pripremim za ispite.</p>
+          <div class="swiper-slide slide">
+            <p>
+              Oduševljena sam dinamičnim pristupom časovima. Vežbe i testovi su
+              odlični za proveru razumevanja gradiva, što mi je pomoglo da se
+              pripremim za ispite.
+            </p>
             <div class="user">
-               <img src="images/user-2.png" alt="">
-               <div class="user-info">
-                  <h3>Teodora Zarić</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star-half-alt"></i>
-                  </div>
-               </div>
+              <img src="images/user-2.png" alt="" />
+              <div class="user-info">
+                <h3>Teodora Zarić</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
 
-         <div class="swiper-slide slide">
-            <p>Dinamičnost časova čini učenje zabavnim i angažujućim iskustvom. Tako da sve pohvale profesoru, odlična komunikacija i topla preporuka.</p>
+          <div class="swiper-slide slide">
+            <p>
+              Dinamičnost časova čini učenje zabavnim i angažujućim iskustvom.
+              Tako da sve pohvale profesoru, odlična komunikacija i topla
+              preporuka.
+            </p>
             <div class="user">
-               <img src="images/pic-4.png" alt="">
-               <div class="user-info">
-                  <h3>Bojana Petrović</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star-half-alt"></i>
-                  </div>
-               </div>
+              <img src="images/pic-4.png" alt="" />
+              <div class="user-info">
+                <h3>Bojana Petrović</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
 
-         <div class="swiper-slide slide">
-            <p>Sajt je odličan za sve nivoe znanja. Profesor uspeva da učini časove izazovnim, ali ne i preteškim, i time je ulio samopouzdanje u mom učenju.</p>
+          <div class="swiper-slide slide">
+            <p>
+              Sajt je odličan za sve nivoe znanja. Profesor uspeva da učini
+              časove izazovnim, ali ne i preteškim, i time je ulio samopouzdanje
+              u mom učenju.
+            </p>
             <div class="user">
-               <img src="images/pic-1.png" alt="">
-               <div class="user-info">
-                  <h3>Ivan Petrov</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star-half-alt"></i>
-                  </div>
-               </div>
+              <img src="images/pic-1.png" alt="" />
+              <div class="user-info">
+                <h3>Ivan Petrov</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
 
-         <div class="swiper-slide slide">
-            <p>Savršeno rešenje za one koji žele individualni pristup učenju. Online časovi omogućavaju fleksibilnost učenja prema mom ličnom ritmu.</p>
+          <div class="swiper-slide slide">
+            <p>
+              Savršeno rešenje za one koji žele individualni pristup učenju.
+              Online časovi omogućavaju fleksibilnost učenja prema mom ličnom
+              ritmu.
+            </p>
             <div class="user">
-               <img src="images/pic-2.png" alt="">
-               <div class="user-info">
-                  <h3>Jelena Aleksić</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star-half-alt"></i>
-                  </div>
-               </div>
+              <img src="images/pic-2.png" alt="" />
+              <div class="user-info">
+                <h3>Jelena Aleksić</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
 
+        <div class="swiper-pagination"></div>
       </div>
+    </section>
 
-      <div class="swiper-pagination"></div>
+    <!-- reviews section ends -->
 
-   </div>
+    <!-- contact section starts  -->
 
-</section>
+    <section class="contact" id="contact">
+      <h1 class="heading">kontaktirajte <span>nas</span></h1>
 
-<!-- reviews section ends -->
+      <div class="row">
+        <div class="image">
+          <img src="images/contact-img.svg" alt="" />
+        </div>
 
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-   <h1 class="heading">kontaktirajte <span>nas</span></h1>
-   
-   <div class="row">
-      <div class="image">
-         <img src="images/contact-img.svg" alt="">
-      </div>
-
-      <form name="contact" method="POST" data-netlify="true" action="pages/success">
-         <div class="contact-info">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="pages/success"
+        >
+          <div class="contact-info">
             <p class="contact-detail">Telefon: <span>+381 65 3477710</span></p>
-            <p class="contact-detail">E-mail: <span>domaci.zadatak016@gmail.com</span></p>
-         </div>
-         <input type="hidden" name="form-name" value="contact" />
-         <span>Ime i Prezime</span>
-         <input type="text" required placeholder="Unesite vaše puno ime" maxlength="50" name="name" class="box">
-         <span>E-mail</span>
-         <input type="email" required placeholder="Unesite validan e-mail" maxlength="50" name="email" class="box">
-         <span>Poruka</span>
-         <textarea name="message" required placeholder="Unesite sadržaj vaše poruke"></textarea>
-         <span>izaberite nivo uzrasta</span>
-         <select name="courses" class="box" required>
-            <option value="" disabled selected>-- izaberite nivo uzrasta --</option>
+            <p class="contact-detail">
+              E-mail: <span>domaci.zadatak016@gmail.com</span>
+            </p>
+          </div>
+          <input type="hidden" name="form-name" value="contact" />
+          <span>Ime i Prezime</span>
+          <input
+            type="text"
+            required
+            placeholder="Unesite vaše puno ime"
+            maxlength="50"
+            name="name"
+            class="box"
+          />
+          <span>E-mail</span>
+          <input
+            type="email"
+            required
+            placeholder="Unesite validan e-mail"
+            maxlength="50"
+            name="email"
+            class="box"
+          />
+          <span>Poruka</span>
+          <textarea
+            name="message"
+            required
+            placeholder="Unesite sadržaj vaše poruke"
+          ></textarea>
+          <span>izaberite nivo uzrasta</span>
+          <select name="courses" class="box" required>
+            <option value="" disabled selected>
+              -- izaberite nivo uzrasta --
+            </option>
             <option value="osnovna škola">Osnovna Škola</option>
             <option value="srednja škola">Srednja Škola</option>
             <option value="fakultet">Fakultet</option>
-         </select>
-         <span>Izaberite tip časa</span>
-         <div class="radio">
-            <input type="radio" name="gender" value="male" id="male">
+          </select>
+          <span>Izaberite tip časa</span>
+          <div class="radio">
+            <input type="radio" name="gender" value="male" id="male" />
             <label for="male">privatno</label>
-            <input type="radio" name="gender" value="female" id="female">
+            <input type="radio" name="gender" value="female" id="female" />
             <label for="female">online</label>
-         </div>
-         <input type="submit" value="Pošalji Poruku" class="btn" name="send">
-         <!-- <input type="hidden" name="form-name" value="contact"> -->
-      </form>
-
-   </div>
-
-</section>
-
-<!-- contact section ends -->
-
-<!-- footer section starts  -->
-
-<footer class="footer">
-
-   <section>
-      <div class="share">
-         <a href="https://www.facebook.com/domaci.zadatak016" target="_blank" class="fab fa-facebook-f" title="Facebook"></a>
-         <a href="https://www.instagram.com/domaci.zadatak016/" target="_blank" class="fab fa-instagram" title="Instagram"></a>
-         <a href="https://www.youtube.com/channel/UCjykM4fRlxevw76npUvLxVQ" target="_blank" class="fab fa-youtube" title="YouTube"></a>
-         <a href="mailto:domaci.zadatak016@gmail.com" class="material-icons" title="Email">mail</a>
-         <a href="tel:+381653477710" class="material-icons" title="Phone">phone</a>
+          </div>
+          <input type="submit" value="Pošalji Poruku" class="btn" name="send" />
+          <!-- <input type="hidden" name="form-name" value="contact"> -->
+        </form>
       </div>
+    </section>
 
-      <div class="credit">&copy; Copyright @ 2024 by <span>Domaći Zadatak</span> | Sva prava zadržana!</div>
-      <a href="#" class="gotop"><img src="images/arrow-up.svg" alt=""></a> 
-   </section>
+    <!-- contact section ends -->
 
-</footer>
+    <!-- footer section starts  -->
 
-<!-- footer section ends -->
+    <footer class="footer">
+      <section>
+        <div class="share">
+          <a
+            href="https://www.facebook.com/domaci.zadatak016"
+            target="_blank"
+            class="fab fa-facebook-f"
+            title="Facebook"
+          ></a>
+          <a
+            href="https://www.instagram.com/domaci.zadatak016/"
+            target="_blank"
+            class="fab fa-instagram"
+            title="Instagram"
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCjykM4fRlxevw76npUvLxVQ"
+            target="_blank"
+            class="fab fa-youtube"
+            title="YouTube"
+          ></a>
+          <a
+            href="mailto:domaci.zadatak016@gmail.com"
+            class="material-icons"
+            title="Email"
+            >mail</a
+          >
+          <a href="tel:+381653477710" class="material-icons" title="Phone"
+            >phone</a
+          >
+        </div>
 
-<!-- swiper js link  -->
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <div class="credit">
+          &copy; Copyright @ 2024 by <span>Domaći Zadatak</span> | Sva prava
+          zadržana!
+        </div>
+        <a href="#" class="gotop"><img src="images/arrow-up.svg" alt="" /></a>
+      </section>
+    </footer>
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-<script>
-   function submitForm(event) {
-       // You can add any custom validation or handling here
-       // Make sure to prevent the default form submission
-       event.preventDefault();
-       // The form will be submitted automatically by Netlify
-   }
-</script>
+    <!-- footer section ends -->
 
-</body>
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script>
+      function submitForm(event) {
+        // You can add any custom validation or handling here
+        // Make sure to prevent the default form submission
+        event.preventDefault();
+        // The form will be submitted automatically by Netlify
+      }
+    </script>
+  </body>
 </html>
