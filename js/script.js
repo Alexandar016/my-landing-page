@@ -1,17 +1,9 @@
 let menuBtn = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".header .flex .navbar");
-let menuBtnClicked = false;
 
 menuBtn.onclick = () => {
-  if (!menuBtnClicked) {
-    menuBtn.classList.toggle("fa-times");
-    navbar.classList.toggle("active");
-    menuBtnClicked = true;
-  } else {
-    menuBtn.classList.toggle("fa-times");
-    navbar.classList.toggle("active");
-    menuBtnClicked = false;
-  }
+  menuBtn.classList.toggle("fa-times");
+  navbar.classList.toggle("active");
 };
 
 window.onscroll = () => {
