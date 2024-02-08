@@ -491,6 +491,12 @@ section {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
+.dropdown-content a {
+  margin-left: 0 !important;
+}
+.dropdown-content.show {
+  display: block;
+}
 
 .logo-container {
   display: flex;
@@ -615,9 +621,15 @@ section {
     display: block;
     margin: 1rem 2rem;
   }
-}
-.dropdown-content a {
-  margin-left: 0 !important;
+  .dropdown-content {
+    bottom: 0px;
+    box-shadow: none;
+    position: relative;
+    margin-left: 2rem;
+  }
+  .dropdown-content a {
+    padding: 2px 4px;
+  }
 }
 
 /* media queries  */

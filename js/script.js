@@ -1,6 +1,23 @@
 let menuBtn = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".header .flex .navbar");
+document.addEventListener("DOMContentLoaded", function () {
+  var dropdownToggle = document.getElementById("coursesDropdown");
+  var dropdownContent = document.getElementById("coursesDropdownContent");
 
+  dropdownToggle.addEventListener("click", function () {
+    dropdownContent.classList.toggle("show");
+  });
+
+  // Close dropdown when clicking outside of it
+  document.addEventListener("click", function (event) {
+    if (
+      !dropdownToggle.contains(event.target) &&
+      !dropdownContent.contains(event.target)
+    ) {
+      dropdownContent.classList.remove("show");
+    }
+  });
+});
 menuBtn.onclick = () => {
   menuBtn.classList.toggle("fa-times");
   navbar.classList.toggle("active");
